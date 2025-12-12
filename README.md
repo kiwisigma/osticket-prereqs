@@ -6,10 +6,6 @@
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -18,7 +14,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 10</b> 
 
 ## List of Prerequisites
 | Item                                    | Purpose                                      | Download Link |
@@ -39,6 +35,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Azure VM Creation"/>
 </p>
+
+-to run osTIcket we are going to need a host system, 
+I have decided to use Microsoft Azure as my cloud hosting service for a client to run osTicket on.
+to get setup create a Microsoft Azure account and select the free subscription provided. Then, follow these steps..
 
 1. Log in to the [Microsoft Azure Portal](https://portal.azure.com).
 2. Click **Create a resource** → **Virtual machine**.
