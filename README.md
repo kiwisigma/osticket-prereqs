@@ -234,10 +234,17 @@ Now, we have to configure php through IIS.
 <img width="1905" height="772" alt="image" src="https://github.com/user-attachments/assets/31518e15-2698-4cec-8fd9-edc55dbb07eb" />
 
 
-### Step 11 Install osTicket
+### Step 11: Install osTicket
 
-1. Go back to the uncompressed osTicket folder.
-2. 
+1. Go back to the osTicket.zip folder.
+ 
+2. Then extract it to the specified folder.
+
+<img width="1118" height="746" alt="image" src="https://github.com/user-attachments/assets/66f0d0a4-b822-4108-924d-e10046775638" />
+
+
+
+3.
 
 
 
