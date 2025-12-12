@@ -181,6 +181,89 @@ into a cleaner url like: https://127.0.0.1/osticket/upload/tickets/123 )
 
 <img width="482" height="301" alt="image" src="https://github.com/user-attachments/assets/49a73ce4-2de5-4ef8-bbe1-4885348c4265" />
 
+### Step 9: Install HeidiSQL_12.3.0.6589_Setup/ mysql-5.5.62-win32
+(This tool will allow us to create and manage the MySQL/MariaDB database where 
+osTicket will securely store all tickets, users, and configuration data. )
+
+1. Accept the license agreement and it will create a new directory on our :C drive.
+
+<img width="593" height="452" alt="image" src="https://github.com/user-attachments/assets/2aa35ac1-bc73-4518-9d7a-c3f1b431c68f" />
+
+2. If propted to choose a type of installation choose "Typical".
+
+<img width="605" height="473" alt="image" src="https://github.com/user-attachments/assets/db663837-2659-4f37-a953-94c5e666ec71" />
+
+
+3. Continue with next if prompted through the SQL configuration wizard.
+
+4. Then, choose "Standard" configuration.
+
+<img width="608" height="466" alt="image" src="https://github.com/user-attachments/assets/b77c4a0a-1d82-4d78-968f-a575f56b5847" />
+
+6. Hit next
+   
+7. When prompted for root password choose a strong password. (do not loose it)
+<img width="607" height="461" alt="image" src="https://github.com/user-attachments/assets/393b3aa8-bb2a-4bb8-83a1-ba1c767b6e44" />
+
+Great now we have an installed database to work with.
+Now, we have to configure php through IIS.
+
+### Step 10 configure PHP through IIS.
+1. open Internet Information Services (IIS) Manager and run as admin.
+   
+<img width="824" height="679" alt="image" src="https://github.com/user-attachments/assets/66306cc5-dcf1-46df-9182-78c47175e1ea" />
+
+2. Open the PHP manager Icon.
+
+<img width="1495" height="408" alt="image" src="https://github.com/user-attachments/assets/44382d5b-0d0c-4000-b408-e8f45c64a962" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
