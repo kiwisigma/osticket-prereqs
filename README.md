@@ -20,21 +20,39 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Windows 10</b> (21H2)
 
-<h2>List of Prerequisites</h2>
+## List of Prerequisites
+| Item                                    | Purpose                                      | Download Link |
+|----------------------------------------|-----------------------------------------------|---------------|
+| Microsoft Azure Free Account           | Host the virtual machine                      | [azure.microsoft.com/free](https://azure.microsoft.com/free) |
+| PHP Manager for IIS                    | Manage PHP within IIS                         | PHPManagerForIIS_V1.5.0.msi |
+| Microsoft Visual C++ Redistributable  | Required runtime libraries                    | VC_redist.x86.exe (or x64 depending on setup) |
+| MySQL 5.5.62                                   | Database server                               | Official MySQL archive |
+| osTicket Installation Files (v1.15.x or latest stable) | Core application files          | [github.com/osTicket/osTicket](https://github.com/osTicket/osTicket/releases) |
+| HeidiSQL (optional but recommended)   | MySQL GUI client                              | [heidisql.com](https://www.heidisql.com/) |
 
-- PHPManagerForIIS_V1.5.0.msi
-- osTicket-Installation-Files
--  VC_redist.x86.exe
--  MySQL 5.5.62
+<br/>
 
+## Installation Steps
 
-<h2>Installation Steps</h2>
+### Step 1: Create a Virtual Machine in Microsoft Azure
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Azure VM Creation"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+1. Log in to the [Microsoft Azure Portal](https://portal.azure.com).
+2. Click **Create a resource** → **Virtual machine**.
+3. Configure the following basic settings:
+   - **Subscription**: Free Trial (or your existing subscription)
+   - **Resource Group**: Create new (e.g., `osTicket-Lab-RG`)
+   - **Virtual machine name**: `VM-osTicket`
+   - **Region**: Choose the closest to you (e.g., East US)
+   - **Image**: **Windows 10 Pro, Version 21H2** (or latest available)
+   - **Size**: **Standard_B1s** or **B1ms** (eligible for free tier)
+   - **Administrator account**: Set a username and strong password
+4. Under **Networking**, ensure port **3389 (RDP)** and **80 (HTTP)** are allowed in the NSG.
+5. Review + Create → **Create**.
+  
 </p>
 <br />
 
