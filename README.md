@@ -217,6 +217,57 @@ Now, we have to configure php through IIS.
 
 <img width="1495" height="408" alt="image" src="https://github.com/user-attachments/assets/44382d5b-0d0c-4000-b408-e8f45c64a962" />
 
+3. Register a new PHP version.
+
+   <img width="712" height="649" alt="image" src="https://github.com/user-attachments/assets/b645f61b-b41a-4faa-970f-1b2dbf3eb40f" />
+
+
+4. When prompted to select a path
+ we will use our previously created PHP folder on our C drive
+ and select the php-cgi application.
+   C:\PHP\php-cgi.exe
+
+<img width="499" height="218" alt="image" src="https://github.com/user-attachments/assets/1a4cf69c-8ea9-42b8-9069-067a58933aba" />
+
+5. Then stop and restart IIS.
+
+<img width="1905" height="772" alt="image" src="https://github.com/user-attachments/assets/31518e15-2698-4cec-8fd9-edc55dbb07eb" />
+
+
+### Step 11 Install osTicket
+
+1. Go back to the uncompressed osTicket folder.
+2. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
