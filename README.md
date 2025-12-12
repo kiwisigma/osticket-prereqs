@@ -33,7 +33,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 ### Step 1: Create a Virtual Machine in Microsoft Azure
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Azure VM Creation"/>
+<img <img width="2297" height="339" alt="image" src="https://github.com/user-attachments/assets/609296c3-eea2-466d-8f80-99dbe00a4820" />
+
 </p>
 
 -to run osTIcket we are going to need a host system, 
