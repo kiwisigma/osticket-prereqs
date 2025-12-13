@@ -244,24 +244,50 @@ Now, we have to configure php through IIS.
 
 
 
-3.
+Now we should have two folders that are inside the osTicket installation, the "upload"
+file will be integeral to congiure our webserver to run osTicket, we simply need to change our configuration file for our webserver.
+
+3. Copy the "upload" folder to the "c:\inetpub\wwwroot" directory.
+
+<img width="745" height="591" alt="image" src="https://github.com/user-attachments/assets/4d1e9569-8cf9-493b-b232-04c1e0892bb5" />
 
 
+(This c:\inetpub\wwwroot path is just the root for our webserver settings.)
+
+4. For clarity sake, lets rename this "upload" folder to: osTicket.
+
+<img width="832" height="343" alt="image" src="https://github.com/user-attachments/assets/739452a8-7c27-40b3-b582-5b437fbfdac3" />
 
 
+5. Now becuase we made a change to the root directory, let's refresh IIS by restarting our webserver in the IIS menu.
 
+<img width="1905" height="630" alt="image" src="https://github.com/user-attachments/assets/f8a98727-8001-4394-8929-b363966f149a" />
 
+ Let's try to view the configuration by accessing:  sites > default > osTicket
 
+6. click the dropdown in the left column for osTicket-vm (or whatever you choose to name your virtual machine.)
 
+<img width="212" height="300" alt="image" src="https://github.com/user-attachments/assets/fa4417ac-b26e-496e-85b7-5cb4ad00063e" />
 
+7. Click sites.
 
+<img width="209" height="251" alt="image" src="https://github.com/user-attachments/assets/41137ba8-e4c8-49e9-ac92-f7c5e8a51362" />
 
+8. Click Default Web Site.
 
+<img width="203" height="279" alt="image" src="https://github.com/user-attachments/assets/0c6207a7-0de3-43bb-b580-98fa0218d26c" />
 
+9. Click the osTicket folder.
 
+<img width="1899" height="709" alt="image" src="https://github.com/user-attachments/assets/dd5ffbc5-aa93-4f92-ab65-a54b654dc927" />
 
+10. Now in the right-side column under manage folder, click "Browse*:80(http)
 
+<img width="1909" height="684" alt="image" src="https://github.com/user-attachments/assets/d6bbd3c9-ccee-4337-8eb5-2e7614c75359" />
 
+congrats! we now can view our osTicket site!
+
+<img width="1575" height="1034" alt="image" src="https://github.com/user-attachments/assets/51d0c442-186e-4210-972a-002ca176daa1" />
 
 
 
