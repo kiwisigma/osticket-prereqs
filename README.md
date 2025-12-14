@@ -460,3 +460,13 @@ Let's head back to the osTicket installation and fill out the remaining SQL sett
 
 <img width="625" height="514" alt="image" src="https://github.com/user-attachments/assets/01e50e9f-7b24-46cb-aa62-bbe186fae23a" />
 
+Congradulations! osTicket will provide you a link to your staff control pannel, your osTicker URL, as well as the offical documentation and Forum below
+
+
+<img width="622" height="517" alt="image" src="https://github.com/user-attachments/assets/70ec8ece-01f0-4732-8a92-f14586c7def8" />
+
+
+
+
+
+
