@@ -316,7 +316,7 @@ osTicket's configuration settings for QoL and performance.
 
 4. Now, let's refresh osTicket.
 
-   <img width="828" height="780" alt="image" src="https://github.com/user-attachments/assets/9505747f-3260-4b0a-99e3-d79e430128c5" />
+<img width="828" height="780" alt="image" src="https://github.com/user-attachments/assets/9505747f-3260-4b0a-99e3-d79e430128c5" />
 
 Now we just need to rename:  
 
