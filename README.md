@@ -289,77 +289,174 @@ congrats! we now can view our osTicket site!
 
 <img width="1575" height="1034" alt="image" src="https://github.com/user-attachments/assets/51d0c442-186e-4210-972a-002ca176daa1" />
 
+Now we got a lot of the heavy setup out of the way we just need to settup some of
+osTicket's configuration settings for QoL and performance.
 
 
 
+### Step 12: Configure IMAP Extension/Intl Extension for osTicket
 
 
+<img width="856" height="789" alt="image" src="https://github.com/user-attachments/assets/ccb6b20e-273d-4930-86bd-48608d6f3a4c" />
 
+1. Head to the IIS Manager then select osTicket > PHP Manager
 
+<img width="1895" height="896" alt="image" src="https://github.com/user-attachments/assets/0364a5dc-d2c1-4a52-be70-f29b73d1ead9" />
 
+2. Once inside, go to enable PHP Extensions.
 
+<img width="1017" height="840" alt="image" src="https://github.com/user-attachments/assets/9d2e66bb-3f84-4d8e-9799-8ed518dd7310" />
 
+3. Now lets enable the following:
+   php_imap.dll
+   php_intl.dll
+   php_opache.dll
+   
+<img width="1590" height="1014" alt="image" src="https://github.com/user-attachments/assets/92be2fb8-2d09-4b70-85b9-d9317d19059b" />
 
+4. Now, let's refresh osTicket.
 
+   <img width="828" height="780" alt="image" src="https://github.com/user-attachments/assets/9505747f-3260-4b0a-99e3-d79e430128c5" />
 
+Now we just need to rename:  
 
+ost-config.php
+From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
+This is where osTicket stores user configuration settings and currently the path is not defined in osTicket's directory.
+We will also need to grant higher privileges to osTicket for it to write to this file.
 
+### Step 12 rename:  ost-config.php
+1. Go to File Explorer, C: > Inetpub > wwwroot > osTicket > include
 
+2. scroll down to find ost-sampleconfig.php
 
+<img width="1120" height="654" alt="image" src="https://github.com/user-attachments/assets/e264ab76-3680-4b92-873c-b4bad96fbe3d" />
 
+3. Right-click nename  "ost-sampleconfig.php" to "ost-config.php"
 
+4. Rick click ost-oconfig.php
 
+5. View properties, click the Security tab
+   
+<img width="356" height="504" alt="image" src="https://github.com/user-attachments/assets/cc09f43b-a8ea-4ab2-a23c-6b778718e769" />
 
+6. Click advanced,
 
+<img width="359" height="505" alt="image" src="https://github.com/user-attachments/assets/8d796bd1-df69-4ffd-8cd5-e71902dc6424" />
 
 
+7. Disable inheritance.
 
+<img width="762" height="517" alt="image" src="https://github.com/user-attachments/assets/68da4345-13c4-4eb6-85c2-9e927875fa5e" />
 
+8. Click remove all inherited permissions
 
+<img width="782" height="507" alt="image" src="https://github.com/user-attachments/assets/b0f04802-b171-4116-932d-3940ab9875cf" />
 
+9.We can see now that we have cleared all permissions for this config php file, now we will add new permissions.
 
+<img width="769" height="527" alt="image" src="https://github.com/user-attachments/assets/2109e46d-76a4-43c6-8b16-4371b5c23017" />
 
+10. Select principal,
 
+11. in this menu we will be able to select group control access to this file, for this example we will choose everyone, but this is not a reccommend default policy.
 
+<img width="461" height="277" alt="image" src="https://github.com/user-attachments/assets/3016da98-7e3c-489b-a661-8e9891508886" />
+    
+12. Then select "OK"
 
+13. From here, we will grant all permissions, then press "OK".
 
+<img width="917" height="585" alt="image" src="https://github.com/user-attachments/assets/bdeeb51e-63e0-4aac-adfa-402153862c83" />
 
+14. Now our permission entries have been updated, click "apply" and then select "ok"
 
+<img width="760" height="516" alt="image" src="https://github.com/user-attachments/assets/2c3cb934-3da0-400f-b22a-308b5afe6ae4" />
 
+15. On the properties menu select "ok"
 
+<img width="359" height="505" alt="image" src="https://github.com/user-attachments/assets/b5250978-844f-4a7a-8fb3-a9f262cbef91" />
 
 
+### Step 13 Configure osTicket settings:
 
+1.Continue back to our osTicket page, then press "continue"
 
+<img width="1666" height="1035" alt="image" src="https://github.com/user-attachments/assets/117f7483-320d-4938-a599-5f95d9a667a3" />
 
 
+2. Now we will be prompted with fields for continuing the osTicket instillation
 
+<img width="1583" height="897" alt="image" src="https://github.com/user-attachments/assets/b725a0cd-f2a8-4fe7-a72a-efd3fa91765d" />
 
+3. Feel free to choose any credentials of our liking 
 
+ We will now need to continue with our database settup
 
 
+### Step 14 Configure Database settings:
 
+1. Head to file explorer > Desktop > osTicket-Instillation-Files >  osTicket-Instillation-Files
+C:\Users\azureuser\Desktop\osTicket-Installation-Files\osTicket-Installation-Files
 
+2. Double click HeidiSQL_12.3.0.6589_Setup 
 
+<img width="1130" height="341" alt="image" src="https://github.com/user-attachments/assets/d3734e1b-2bfb-4a6b-b68c-6770e0c2f965" />
 
+3. Click "accept", then "Next" > "Install"
 
+4. Now with HeidiSQL opened, we will connect our osTicket database we originaly created in step 9
 
 
+5. Click New, 
 
+<img width="687" height="485" alt="image" src="https://github.com/user-attachments/assets/7c27c0b5-67a2-4431-942b-de9e5491a9cd" />
 
+6. Then, enter your username and password you created for the database in step 9.
 
+<img width="685" height="480" alt="image" src="https://github.com/user-attachments/assets/e056f1d2-dae2-43d6-a238-872ab79aa99c" />
 
+7. Then, click open,
 
+**If you run into any issues getting HeidiSQL to find the database we created, I reccommend checking the services.mcs list and look to see if SQL is active,
+<img width="413" height="224" alt="image" src="https://github.com/user-attachments/assets/54f2e177-b155-4841-8567-d8b252a0c05e" />
 
+ also you can check if there is any activity on port 3306 buy using the command in cmd as admin:
+ C:\Users\azureuser>netstat -ano | findstr :3306
+C:\Users\azureuser>sc query type= service state= all | findstr /I "mysql mariadb"
 
+<img width="887" height="462" alt="image" src="https://github.com/user-attachments/assets/e68710dc-b640-40ee-b4a0-37b698d821e5" />
 
 
+### Step 14: Creating the osTicket database
+1. Right click the un-named tag in the left column, 
 
+<img width="984" height="542" alt="image" src="https://github.com/user-attachments/assets/6f457bd5-7a67-4074-8252-6ea636a558c9" />
 
+2. Right click Un-named > Create New > Database
+<img width="514" height="444" alt="image" src="https://github.com/user-attachments/assets/6e212048-9dd1-49bf-b444-4edfc305f842" />
 
+3. Name the database "osTicket", then click "ok"
 
+<img width="320" height="267" alt="image" src="https://github.com/user-attachments/assets/4904aae1-a224-438e-815a-3a2611ab54c4" />
 
+now we have our osticket configured database ready,
 
+<img width="981" height="546" alt="image" src="https://github.com/user-attachments/assets/c3c3c793-8f0b-4de3-be2c-b8125f5500e9" />
 
+Let's head back to the osTicket installation and fill out the remaining SQL settings.
+
+
+### Step 15: Finish SQL configuration, 
+1. Enter in the MySQL database we just made named "osTicket"
+
+2. Enter the SQL Username and Password from step 9
+
+<img width="635" height="337" alt="image" src="https://github.com/user-attachments/assets/b2b66185-b6ca-45cb-a362-0d2f385c0e59" />
+
+3. Then click "Install Now"
+
+<img width="625" height="514" alt="image" src="https://github.com/user-attachments/assets/01e50e9f-7b24-46cb-aa62-bbe186fae23a" />
 
